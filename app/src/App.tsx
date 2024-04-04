@@ -1,8 +1,10 @@
 import { FC } from "react";
-import { Counter } from "@example-workspace/lib";
+import { LegacyCounter } from "@example-workspace/lib";
+import { ModernCounter } from "./ModernCounter";
 
 export const App: FC = () => (
   <div>
-    <Counter initialCount={42} />
+    <ModernCounter initialCount={42} />
+    <LegacyCounter initialCount={42} />
   </div>
 );
